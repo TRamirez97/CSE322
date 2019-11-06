@@ -1,6 +1,19 @@
 <html>
 <head>
 <style>
+
+.Contents {
+    background-color: white;
+	color: black;
+	margin: 25px;
+	padding: 25px;
+}
+
+.Food {
+	float: left;
+	width: 20%;	
+}
+	
 .Recipes {
   background-color: red;
   color: black;
@@ -15,15 +28,34 @@ header{
 	color: black;
 }
 
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+.Recipes {
+    width: 80%;
+    padding: 0;
+}
+	
+@media only screen and (max-width:500px) {
+/* For mobile phones: */
+.Contents, .Recipes {
+    width: 100%;
+}
+
 </style>
 </head>
+	
 <body>
 
 <header>
 	<h2> Tim's Favorite Dishes </h2>
 </header>
 
-			
+<div class="contents">
+	<div class="item"> Spaghetti and Meatballs </div>
+	<div class="item"> Country Fried Steak </div>
+	<div class="item"> Something </div>
+</div>
+	
 <div class="recipes">
 	
 	<h2>Spaghetti and Meatballs</h2>
@@ -37,20 +69,6 @@ header{
 		<img src="https://farm5.staticflickr.com/4334/36985202050_37e58d0326_b.jpg" alt="Picture of Spaghetti" width="460" height="345">
 	</a>
 </div> 
-
-<div class="recipes">
-	<h2>Country Fried Steak</h2>
-		
-	<p>1. Tenderize flat steak until it has a nice rigged texture. Aternatively buy some already tendereized cube steak.</p>
-	<p>2. Add olive oil or butter to warm pan and heat.</p>
-	<p>3. Dip steak into flour, milk and flour again to give it a coating.</p>
-	<p>4. Place steak on pan and cook over medium heat. </p>
-	<p>5. Cook until brown, remove from heatt and boom country fried steak. </p>
-	
-	<a href =https://www.youtube.com/watch?v=X0KFIGH_Y1E>	
-		<img src="https://farm4.staticflickr.com/3785/20441380172_2bd6b3d1f8_b.jpg" alt="Picture of Country Fried Steak" width="460" height="345">
-	</a>
-</div>
 
 </body>
 </html>

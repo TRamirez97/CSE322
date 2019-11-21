@@ -12,10 +12,10 @@
 }
 
 .Contents {
-	float: left;
-	width: 20%;	
+        float: left;
+        width: 20%;
 }
-	
+
 .Recipes {
   background-color: red;
   color: black;
@@ -25,12 +25,6 @@
   width: 70%;
 }
 
-header{ 
-	background-color: grey;
-	text-align: center;
-	font-size: 40px;
-	color: black;
-}
 
 @media only screen and (max-width:800px) {
   /* Tablets */
@@ -38,7 +32,7 @@ header{
     width: 80%;
     padding: 0;
 }
-	
+
 @media only screen and (max-width:500px) {
 /* Phones */
 .Contents, .Recipes {
@@ -47,32 +41,41 @@ header{
 
 </style>
 </head>
-	
+
 <body>
 
-<header>
-	<h2> Tim's Favorite Dishes </h2>
-</header>
+<h1 id = "title" style = "background-color: grey; text-align: center; font-size: 40px; color: black;">
+	Tim's Favorite Recipes
+</h1>
 
 <div style="overflow.auto">
 <div class="contents">
-	<a href= index.html> <div class="food"> Spaghetti and Meatballs </div> </a>
-	<a href= steak.html> <div class="food"> Salisbury Steak </div> </a>
-	<a href=DomTest.html> <div class="food"> Gyoza </div> </a>
+        <a href= index.html> <div class="food"> Spaghetti and Meatballs </div> </a>
+        <a href= steak.html> <div class="food"> Salisbury Steak </div> </a>
+        <a href=DomTest.html> <div class="food"> Gyoza </div> </a>
 </div>
 
 <div class="recipes">
-	
-	<h2>Gyoza</h2>
-	
-	<p> 1. Combine cabbage and 1/2 tsp salt in a small bowl, then set aside for 20 minutes to allow the cabbage to wilt slightly. </p>
-	<p> 2. Place remaining Filling ingredients (including remaining 1/2 tsp salt) in a large bowl. Squeeze out any excess water from the cabbage and add to the bowl.
-	</p>
-	<p> 3. Blah Blah Blah Blah </p>
-	<a href="https://www.youtube.com/watch?v=-fAPPTjUZeM">
-		<img src="https://www.justonecookbook.com/wp-content/uploads/2017/07/Gyoza.jpg" alt="Picture of Spaghetti" style= "width:50%"
-	</a>
+
+        <h2>Gyoza</h2>
+
+        <p> 1. Combine cabbage and 1/2 tsp salt in a small bowl, then set aside for 20 minutes to allow the cabbage to wilt slightly. </p>
+        <p> 2. Place remaining Filling ingredients (including remaining 1/2 tsp salt) in a large bowl. Squeeze out any excess water from the cabbage and add to the bowl. </p>
+        <p> 3. Blah Blah Blah Blah </p>
+                <img id="foodPic" src ="https://www.justonecookbook.com/wp-content/uploads/2017/07/Gyoza.jpg" alt="Picture of Gyoza" style= "width:50%">
 </div>
+
+<button type = "button"
+        onclick = "document.getElementById('title').innerHTML = 'Demonstrating Get Elements by ID';"> I should change title
+</button>
+
+<button type= "button"
+		onclick = "document.GetElementById('foodPic').src = 'https://rasamalaysia.com/wp-content/uploads/2016/10/shrimp-gyoza.jpg';"> I should change the picture
+</button>
+
+
+
+
 </div>
 
 </body>
